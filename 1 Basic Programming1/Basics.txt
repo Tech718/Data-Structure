@@ -1,0 +1,260 @@
+#FlowCharts
+Flowchart is a graphical representation of an algorithm.
+
+#Programming Languages
+A Language using which we can instruct the computer to carry out real life tasks and computation is called a Programming Language.
+
+Q3)What is namespace?
+Ans)A namespace is a declarative region that provides a scope to the identifiers inside it.Namespace are used to organize code into logical groups and to prevent name collisions that can occur especially when your base includes multiple librareis.
+
+Q4)What is iostream?
+Ans)Provides basic input and output services for c++ programs.
+
+Q5)Data Types and Variables:  
+Ans)✅ Variables  
+- A variable is a named storage location in memory used to store data.
+- It must be declared before use and follow specific naming conventions (e.g., no spaces, no special characters, cannot start with a number).
+  
+Example: 
+int age = 20;  
+float price = 99.99;  
+char grade = 'A';  
+
+✅ Data Types 
+Data types specify the type of data that a variable can store.  
+
+1. Primitive Data Types  
+- Integer (int) → Stores whole numbers.  
+- Float (float) → Stores decimal numbers.  
+- Double (double) → Stores large decimal numbers with more precision.  
+- Character (char) → Stores a single character.  
+- Boolean (bool) → Stores `true` or `false`.  
+
+Example:
+int score = 75;
+float temperature = 36.5;
+double pi = 3.14159265359;
+char letter = 'B';
+bool isPassed = true;
+
+2. Derived Data Types  
+- Array → Collection of similar data types.  
+- Pointer → Stores the memory address of another variable.  
+- Reference → An alias for an existing variable.  
+
+int numbers[5] = {1, 2, 3, 4, 5}; // Array
+int* ptr = &score; // Pointer
+int &ref = score; // Reference
+
+3. User-defined Data Types 
+- Struct → Groups variables of different data types.  
+- Union → Similar to struct, but shares memory.  
+- Enum → Defines a set of named integer constants.  
+
+Example:
+struct Student {
+    int id;
+    char name[20];
+    float marks;
+};
+
+✅ Type Modifiers  
+- signed / unsigned → Determines whether variables can store negative values.  
+- short / long → Increases or decreases the storage capacity.  
+
+Example:
+unsigned int a = 50; // No negative values
+long long int b = 1234567890123;
+
+
+Q6)ASCII (American Standard Code for Information Interchange)
+
+## ✅ **ASCII Value Table**
+
+| **Character** | **ASCII Value** | **Character** | **ASCII Value** |
+|----------------|-----------------|----------------|-----------------|
+| A              | 65              | a              | 97              |
+| B              | 66              | b              | 98              |
+| C              | 67              | c              | 99              |
+| D              | 68              | d              | 100             |
+| E              | 69              | e              | 101             |
+| F              | 70              | f              | 102             |
+| G              | 71              | g              | 103             |
+| H              | 72              | h              | 104             |
+| I              | 73              | i              | 105             |
+| J              | 74              | j              | 106             |
+| K              | 75              | k              | 107             |
+| L              | 76              | l              | 108             |
+| M              | 77              | m              | 109             |
+| N              | 78              | n              | 110             |
+| O              | 79              | o              | 111             |
+| P              | 80              | p              | 112             |
+| Q              | 81              | q              | 113             |
+| R              | 82              | r              | 114             |
+| S              | 83              | s              | 115             |
+| T              | 84              | t              | 116             |
+| U              | 85              | u              | 117             |
+| V              | 86              | v              | 118             |
+| W              | 87              | w              | 119             |
+| X              | 88              | x              | 120             |
+| Y              | 89              | y              | 121             |
+| Z              | 90              | z              | 122             |
+
+
+
+### ✅ **Other Common ASCII Characters**
+| **Character** | **ASCII Value** | **Character** | **ASCII Value** |
+|----------------|-----------------|----------------|-----------------|
+| 0              | 48              | :              | 58              |
+| 1              | 49              | ;              | 59              |
+| 2              | 50              | ,              | 44              |
+| 3              | 51              | .              | 46              |
+| 4              | 52              | ' ' (Space)    | 32              |
+| 5              | 53              | !              | 33              |
+| 6              | 54              | ?              | 63              |
+| 7              | 55              | @              | 64              |
+| 8              | 56              | #              | 35              |
+| 9              | 57              | $              | 36              |
+| (              | 40              | )              | 41              |
+| {              | 123             | }              | 125             |
+| [              | 91              | ]              | 93              |
+| +              | 43              | -              | 45              |
+| *              | 42              | /              | 47              |
+| %              | 37              | ^              | 94              |
+
+
+Q7)✅ **Actual Meaning of 32-bit and 64-bit  
+
+- 32-bit and 64-bit refer to how a computer's processor (CPU) handles information.  
+- It defines the size of data a CPU can process and transfer at once.  
+- Bit means binary digit (0 or 1), the smallest unit of data in a computer.  
+
+ 🔎 Key Differences in Meaning  
+- 32-bit processors can handle 32 bits (4 bytes) of data at a time.  
+- 64-bit processors can handle 64 bits (8 bytes) of data at a time.  
+- A 64-bit processor can process more data simultaneously than a 32-bit processor, making it faster and more efficient.  
+
+ 📦 Practical Impact 
+- 32-bit OS → Can address up to 4GB of RAM.  
+- 64-bit OS → Can address much more RAM (theoretical limit is 18 Exabytes).  
+- 64-bit Systems are ideal for heavy applications like video editing, gaming, and data analysis.  
+
+
+Q8)✅ Type Casting in C++  
+
+Type Casting in C++ is the process of converting a variable from one data type to another. It is useful when you want to perform operations between different data types or ensure compatibility.
+
+ 📌 Types of Type Casting in C++  
+
+1. Implicit Type Casting (Automatic)  
+   - Done automatically by the compiler.  
+   - Happens when a smaller data type is assigned to a larger data type.  
+   - No data loss occurs.  
+   
+Example:
+int a = 5;
+float b = a;  // Implicit casting from int to float
+cout << b;    // Output: 5.0
+
+
+2. Explicit Type Casting (Manual)  
+   - Performed using type casting operators.  
+   - Can result in data loss if the conversion is from a larger to a smaller data type.  
+
+Example (Using C-Style Cast):
+float num = 10.75;
+int x = (int) num;  // Explicit cast from float to int
+cout << x;          // Output: 10 (fractional part lost)
+
+
+Example (Using C++ Cast Operators):  
+- `static_cast`  
+- `reinterpret_cast`  
+- `const_cast`  
+- `dynamic_cast`  
+
+Using `static_cast`:
+double pi = 3.14159;
+int approxPi = static_cast<int>(pi);  // Convert double to int
+cout << approxPi;                     // Output: 3
+
+
+
+ 📦 When to Use Type Casting
+- Converting from one data type to another for compatibility.  
+- Performing mathematical operations with different data types.  
+- Avoiding precision loss or handling overflow/underflow.  
+
+
+Q9) ✅ Operators in C++ (Simple Notes) 
+
+Operators are symbols used to perform operations on variables and values in C++.
+
+
+📌 Types of Operators  
+
+1. Arithmetic Operators 
+- Perform basic mathematical operations.  
+- `+ , - , * , / , %` (Modulo - Remainder)  
+Example:  
+
+int a = 10, b = 3;
+cout << a + b; // Output: 13
+cout << a % b; // Output: 1
+
+
+2. Relational (Comparison) Operators  
+- Compare values and return `true` or `false`.  
+- `== , != , > , < , >= , <=`  
+Example:  
+cout << (10 > 5); // Output: 1 (true)
+
+3. Logical Operators 
+- Perform logical operations.  
+- `&&` (AND), `||` (OR), `!` (NOT)  
+Example:
+cout << (10 > 5 && 5 < 20); // Output: 1 (true)
+
+4. Bitwise Operators 
+- Perform operations at the binary level.  
+- `& , | , ^ , ~ , << , >>`  
+
+Example:
+cout << (5 & 3); // Output: 1 (0101 & 0011 = 0001)
+
+
+5. Assignment Operators  
+- Assign values to variables.  
+- `= , += , -= , *= , /= , %=`  
+Example:  
+```cpp
+int x = 10;
+x += 5; // Same as x = x + 5; Output: 15
+
+6. Increment and Decrement Operators  
+- `++` (Increment) and `--` (Decrement)  
+- Can be Pre or Post  
+
+Example:
+int a = 5;
+cout << ++a; // Output: 6 (Pre-increment)
+cout << a++; // Output: 6 (Post-increment)
+
+
+7. Ternary Operator  
+- `?:` → Short form of if-else.  
+
+Example:
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+cout << max; // Output: 20
+
+
+8. Special Operators  
+- `sizeof()` → Returns the size of a variable.  
+- `&` → Address-of operator.  
+- `*` → Pointer operator.  
+
+Example:
+int x = 10;
+cout << sizeof(x); // Output: 4 (Depends on system)
